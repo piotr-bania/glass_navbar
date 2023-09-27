@@ -1,17 +1,36 @@
-# 3D Navbar using Next.js and React Three Fiber/Drei
+# Glass Navbar
 
-Create an immersive 3D navigation bar using Next.js, React Three Fiber, and Drei. This project features a frosted glass navbar background, 3D interactive links, and a rotating logo of Bespoke Programming.
+## Overview
+
+This project showcases an immersive 3D navigation bar built with Next.js and React Three Fiber/Drei. It features a frosted glass background with interactive 3D links and a rotating logo.
 
 ## Features
 
-- Frosted Glass Navbar Background
-- 3D Links (Home, About, Contact)
-- Interactive Link Scaling on Hover
-- Rotating Bespoke Programming Logo
-- Smooth Page Transitions
+- Frosted glass background
+- 3D Links: Home, About, Contact
+- Rotating Bespoke Programming logo
+- On-hover scaling of links
+- Floating links
+- Fade-out and fade-in page transitions
 
 ## Installation
 
-1. Clone this repository
-   ```bash
-   git clone https://github.com/YourUsername/3D-Navbar-Nextjs-R3F.git
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/piotr-bania/glass_navbar.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd glass_navbar
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+Run the development server:
+
+```bash
+npm run dev
