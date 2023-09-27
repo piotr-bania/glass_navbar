@@ -1,0 +1,126 @@
+/* ---------- Fonts ---------- */
+@font-face {
+    font-family: "Dolce_Amyara";
+    src: url(../public/fonts/Dolce_Amyara.otf);
+}
+
+@font-face {
+    font-family: "Proxima_Nova_Light";
+    src: url(../public/fonts/Proxima_Nova_Light.otf);
+}
+
+/* ---------- Variables ---------- */
+$primary: #6526D1;
+$secondary: #9B26A1;
+$tertiary: #D02670;
+$background: #07030F;
+$font: #D0D0D0;
+$white: #FFFFFF;
+
+// ---------- Fonts ----------
+$header_font: 'Dolce_Amyara',
+sans-serif;
+$text_font: 'Proxima_Nova_Light',
+sans-serif;
+
+// ---------- Fluid fonts ----------
+$paragraph: clamp(0.78rem, 2.27vw + 0.27rem, 1.89rem);
+$header_4: clamp(0.88rem, 2.56vw + 0.31rem, 2.13rem);
+$header_3: clamp(0.98rem, 2.88vw + 0.35rem, 2.39rem);
+$header_2: clamp(1.11rem, 3.24vw + 0.39rem, 2.69rem);
+$header_1: clamp(1.25rem, 3.64vw + 0.44rem, 3.03rem);
+
+// ---------- Fluid space ----------
+$small: clamp(1.13rem, calc(1.04rem + 0.41vw), 1.50rem);
+$medium: clamp(1.69rem, calc(1.57rem + 0.61vw), 2.25rem);
+$large: clamp(2.25rem, calc(2.09rem + 0.81vw), 3.00rem);
+
+// ---------- Basiscs ----------
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style-type: none;
+}
+
+body {
+    // background: $background;
+    background: url(../public/images/blob_3.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $font;
+    font-family: $text_font;
+    font-size: $paragraph;
+    text-align: left;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+// ---------- Fonts ----------
+h1,
+h2,
+h3,
+h4 {
+    color: $white;
+    font-family: $header_font;
+    line-height: 1.8;
+    word-spacing: 1rem;
+}
+
+h1 {
+    font-size: $header_1;
+}
+
+h2 {
+    font-size: $header_2;
+}
+
+h3 {
+    font-size: $header_3;
+}
+
+h4 {
+    font-size: $header_4;
+}
+
+p {
+    font-family: $text_font;
+    font-size: $paragraph;
+    line-height: 1.4;
+}
+
+// ---------- Sections ----------
+section {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: $small;
+    top: 20vh;
+    padding: $small $large;
+
+    .heading {
+        grid-area: 1 / 3 / 2 / 11;
+    }
+
+    .paragraph_1 {
+        grid-area: 2 / 3 / 3 / 11;
+    }
+
+    .paragraph_2 {
+        grid-area: 3 / 3 / 4 / 11;
+    }
+}
+
+.canvas {
+    position: fixed;
+    top: 5vh;
+    width: 100%;
+    height: 25%;
+    z-index: 10;
+}
